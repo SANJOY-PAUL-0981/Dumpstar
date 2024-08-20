@@ -2,7 +2,12 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        fontPop: ["Poppins", "Arial", "sans-serif"],
+        fontRal: ["Raleway", "Poppins", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

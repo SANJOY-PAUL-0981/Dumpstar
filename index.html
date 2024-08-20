@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dumpstar</title>
-    <meta name="description" content="Drop your overthinking, anxiety, negative thoughts, or maybe intrusive ideas here. ;)">
+    <title>Dumpster</title>
+    <meta name="description"
+        content="Drop your thoughts, or intrusive ideas here. ;)">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/dustbin-icon" href="./public/trash-bin-basket-icon-recycle-600nw-2062405037.webp"><!--favicon-->
 </head>
+
+<style>
+body {
+	background-color: #8EC5FC;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 50%, #9ffff1 96%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+</style>
+
 <body>
-    
+    <!--Nav Bar-->
+    <section id="nav">
+        <div class="font-fontPop text-2xl font-bold p-5 pl-20 cursor-pointer"><i class="fa-regular fa-trash-can"></i> DumpSter</div>
+    </section>
+
+    <!--Body-->
+    <section id="body" class="flex justify-between items-center px-20 h-[81vh]">
+        <div class="text-9xl font-bold font-fontPop">
+            <h1>Drop Your</h1>
+            <h1>Thoughts</h1>
+            <h1>Here</h1>
+        </div>
+        <div class="flex flex-col gap-5 w-[30vw] font-fontPop items-center">
+            <input type="text" placeholder="Dump Your thoughts pookie :) . . . ." class="border-[3px] focus:outline-none
+            focus:shadow-[0_0_15px_rgba(255,255,255,0.8)] hover:shadow-[0_0_15px_rgba(255,255,255,0.8)] border-white rounded-lg bg-transparent text-xl w-[30vw] h-[8vh] text-center">
+            <button class="border border-black px-8 bg-pink-300 transition-transform duration-200 hover:text-black hover:translate-x-[-0.25rem] hover:translate-y-[-0.25rem] hover:shadow-[0.25rem_0.25rem_0px_0px_rgb(0,0,0)] active:translate-x-0 active:translate-y-0 active:shadow-none rounded-md py-2 font-semibold text-2xl w-[15vw] text-center">Dump!</button>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section id="footer" class="flex justify-center items-center font-fontRal font-semibold py-5">
+        <p>Made With ❤️ By <a href="https://x.com/Sanj0yX" target="_blank" class="text-pink-600 font-bold">@Sanj0yX</a></p>
+    </section>
+
+    <script>
+
+    </script>
 </body>
+
 </html>
