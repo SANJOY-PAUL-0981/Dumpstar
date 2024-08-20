@@ -71,13 +71,16 @@
 <body>
     <!--Nav Bar-->
     <section id="nav">
-        <div class="font-fontPop text-2xl font-bold p-5 pl-20 cursor-pointer max-sm:pl-5"><i class="fa-regular fa-trash-can"></i>
+        <div class="font-fontPop text-2xl font-bold p-5 pl-20 cursor-pointer max-sm:pl-5"><i
+                class="fa-regular fa-trash-can"></i>
             DumpSter</div>
     </section>
 
     <!--Body-->
-    <section id="body" class="flex xl:justify-between items-center xl:px-20 xl:h-[81vh] max-sm:h-[80vh] max-sm:flex-col max-sm:justify-center">
-        <div class="text-9xl font-bold font-fontPop max-sm:text-6xl max-sm:w-[100vw] max-sm:flex max-sm:flex-col max-sm:px-8">
+    <section id="body"
+        class="flex xl:justify-between items-center xl:px-20 xl:h-[81vh] max-sm:h-[80vh] max-sm:flex-col max-sm:justify-center">
+        <div
+            class="text-9xl font-bold font-fontPop max-sm:text-6xl max-sm:w-[100vw] max-sm:flex max-sm:flex-col max-sm:px-8">
             <h1>Drop Your</h1>
             <h1>Thoughts</h1>
             <h1>Here!</h1>
@@ -100,7 +103,21 @@
     <!-- Toast Notification -->
     <div id="toast" class="toast"></div>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('dumpButton').addEventListener('click', function () {
+            var inputField = document.getElementById('inputField');
+            var toast = document.getElementById('toast');
+            if (inputField.value.trim() === "") {
+                toast.textContent = "No thoughts are dumped";
+            } else {
+                toast.textContent = "Your thoughts are dumped Successfully!";
+            }
+            toast.className = "toast show";
+            setTimeout(function () {
+                toast.className = toast.className.replace("show", "");
+            }, 3000); // The toast will disappear after 3 seconds
+        })
+    </script>
 </body>
 
 </html>
