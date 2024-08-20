@@ -1,0 +1,14 @@
+{
+  "name": "dumpstar",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vite": "^5.4.1"
+  }
+}
